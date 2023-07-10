@@ -44,5 +44,4 @@ termcolor==2.3.0
 tzdata==2023.3
 unicodecsv==0.14.1
 Werkzeug==2.3.6
-WoeUSB-ng @ file:///home/bernardo/WoeUSB-ng
 WTForms==3.0.1
