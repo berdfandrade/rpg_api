@@ -3,12 +3,14 @@ import json
 from flask import Flask, jsonify
 from criar_monstro import gerar_monstro
 from criar_heroi import gerar_heroi
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 @app.route('/', methods=['GET'])
 def get_hello():
-    mensagem = { "messagem" : "Use a rota /monstro, para gerar um monstro, e a rota /heroi, para gerar um heroi!"}
+    mensagem = { "messagem" : "Use a rota GET /monstro, para gerar um monstro, e a rota GET /heroi, para gerar um heroi!"}
     return jsonify(mensagem), 200
 
 
