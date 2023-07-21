@@ -89,7 +89,7 @@ def gerar_alcunha_heroi(genero):
     
     adjetivo_aleatorio = random.choice(adjetivos)
     
-    if adjetivo_aleatorio in ['Valente', 'Vigilante', 'Audaz', 'Radiante', 'Invencível']:
+    if adjetivo_aleatorio in ['Valente', 'Vigilante', 'Audaz', 'Radiante', 'Nobre', 'Invencível']:
         alcunha = adjetivo_aleatorio
     else:
         alcunha = adjetivo_aleatorio + sufixo
